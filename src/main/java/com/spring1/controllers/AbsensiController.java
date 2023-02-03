@@ -28,17 +28,6 @@ public class AbsensiController {
         return absensiService.save(absensi);
     }
 
-    @PostMapping("/save")
-    public ResponseEntity<Map> save(@Valid @RequestBody Barang objModel) {
-
-        Map map = new HashMap();
-        Map obj = servis.insert(objModel);
-
-        map.put("Request =", objModel);
-        map.put("Response =", obj);
-        return new ResponseEntity<Map>(obj, HttpStatus.OK);
-    }
-
     @GetMapping
     public Iterable<Absensi> findAll(){
         return absensiService.findAll();
