@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.spring1.models.entities.Absensi;
 import com.spring1.models.repos.AbsensiRepo;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 @Service
 @Transactional

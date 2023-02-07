@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.spring1.models.entities.Penugasan;
 import com.spring1.models.repos.PenugasanRepo;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 @Service
 @Transactional
